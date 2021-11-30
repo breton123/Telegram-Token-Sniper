@@ -1,5 +1,5 @@
 from web3 import Web3
-import time, abi, json, telegram_send, sys, colors, colors, requests
+import time, abi, json, telegram_send, sys, colors, requests
 
 with open("config.json", "r") as jsonfile:
     config = json.load(jsonfile)
