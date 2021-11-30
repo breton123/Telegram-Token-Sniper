@@ -25,7 +25,6 @@ def sell(address,tx):
     nonce = web3.eth.get_transaction_count(sender_address)
     while True:
         try:
-            nonce = nonce + 1
             approve = sellTokenContract.functions.approve(config["PANCAKE_ROUTER_ADDRESS"], balance).buildTransaction({
             'from': sender_address,
             'gas': config["GAS_AMOUNT"],
@@ -36,12 +35,12 @@ def sell(address,tx):
             tx_token = web3.eth.send_raw_transaction(signed_txn.rawTransaction)
             break
         except Exception as e:
+            nonce = nonce + 1
             pass
     print(colors.Green+f"Approved to sell {symbol}")
     nonce = web3.eth.get_transaction_count(sender_address)
     while True:
         try:
-            nonce = nonce + 1
             pancakeswap2_txn = contract.functions.swapExactTokensForETHSupportingFeeOnTransferTokens(
                 int(finalValue),int(config["SLIPPAGE"]), 
                 [contract_id,spend],
@@ -57,6 +56,7 @@ def sell(address,tx):
             tx_token = web3.eth.send_raw_transaction(signed_txn.rawTransaction)
             break
         except Exception as e:
+            nonce = nonce + 1
             pass
     print(colors.Green+f"Successfully Sold {symbol}")
     print(colors.Green+"TX Token: " +str(web3.toHex(tx_token)))
@@ -69,3 +69,4 @@ def sell(address,tx):
             
             
     sys.exit()
+    
