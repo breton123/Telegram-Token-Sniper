@@ -19,7 +19,7 @@ def buy(address):
     (int(time.time()) + 10000)
     ).buildTransaction({
     'from': sender_address,
-    'value': web3.toWei(config["BUY_AMOUNT"],'ether'),#This is the Token(BNB) amount you want to Swap from
+    'value': web3.toWei(config["BUY_AMOUNT"],'ether'),
     'gas': config["GAS_AMOUNT"],
     'gasPrice': web3.toWei(config["GAS_PRICE"],'gwei'),
     'nonce': nonce,
