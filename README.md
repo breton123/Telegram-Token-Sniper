@@ -6,7 +6,5 @@ Setup:
  - Add your info to the config.json file
  - Run main.py or run.bat
 
-WARNING:
-- Sell feature currently not working
 
 If anyone wants to add improvements feel free I'd love to hear about them and add them to the build!
