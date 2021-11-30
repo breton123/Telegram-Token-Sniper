@@ -6,7 +6,7 @@
     "WALLET_PRIVATE": "Enter your wallet private key here",
     "PANCAKE_ROUTER_ADDRESS": "0x10ED43C718714eb63d5aA57B78B54704E256024E",
     "BSC_NODE": "Enter your BSC Node Here",
-    "TELEGRAM_CHANNELS": "CMC_fastest_alerts",
+    "TELEGRAM_CHANNELS": ["CMC_fastest_alerts"],
     "TELEGRAM_REQUIRED_MESSAGE": "(first pump)",
     "BUY_AMOUNT": 0.001,
     "GAS_PRICE": "5",
