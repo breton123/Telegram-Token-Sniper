@@ -21,7 +21,7 @@ def sell(address,tx):
     back = tokenValue2[(len(tokenValue2) - decimal):]
     finalValue = front + "." + back
     finalValue = float(finalValue)
-    finalValue = web3.toWei(finalValue, 'gwei')
+    finalValue = web3.toWei(finalValue, 'ether')
     nonce = web3.eth.get_transaction_count(sender_address)
     while True:
         try:
