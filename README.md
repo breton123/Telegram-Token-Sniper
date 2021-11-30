@@ -8,3 +8,5 @@ Setup:
 
 WARNING:
 - Sell feature currently not working
+
+If anyone wants to add improvements feel free I'd love to hear about them and add them to the build!
