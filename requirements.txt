@@ -1,0 +1,4 @@
+telegram-send
+telethon
+web3
+requests
