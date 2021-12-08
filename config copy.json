@@ -1,0 +1,19 @@
+{
+    "API_ID": "Enter your Telegram API ID...",
+    "API_HASH": "Enter your Telegram API HASH...",
+    "PHONE_NUMBER": "Enter your Telegram Phone Number...",
+    "WALLET_ADDRESS": "Enter your Wallet Address...",
+    "PANCAKE_ROUTER_ADDRESS": "0x10ED43C718714eb63d5aA57B78B54704E256024E",
+    "WALLET_PRIVATE": "Enter your Wallet Private Key...",
+    "BSC_NODE": "Enter your BSC Node (wss)...",
+    "TELEGRAM_REQUIRED_MESSAGE": "(first pump)",
+    "BUY_AMOUNT": 0.05,
+    "GAS_PRICE": "15",
+    "GAS_AMOUNT": 1000000,
+    "AMOUNT_ACTIVE_TRADES": 5,
+    "SLIPPAGE": 5,
+    "TAKE_PROFIT": 1.2,
+    "TRAILING_PROFIT": 1.1,
+    "STOP_LOSS": 0.9,
+    "SELL_ADDRESS": "Leave As Is"
+}
