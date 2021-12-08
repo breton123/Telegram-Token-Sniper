@@ -1,0 +1,4 @@
+telegram-send
+pyrogram
+web3
+requests
